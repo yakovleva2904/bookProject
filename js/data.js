@@ -23,9 +23,9 @@ export let offers = new Array(10).fill().map(u => ({
         guests: randomInteger(1, 6),
         checkin: getRound(someChecks),
         checkout: getRound(someChecks),
-        features: randomArray(someFeatures, 5),
+        features: randomArray(someFeatures),
         description: getRound(someDescriptions),
-        photos: randomArray(somePhotos, 3),
+        photos: randomArray(somePhotos),
       },
       location: {
         x: getRandomArbitrary(35.65000, 35.70000),
